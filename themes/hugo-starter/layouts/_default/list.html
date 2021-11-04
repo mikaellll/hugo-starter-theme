@@ -12,8 +12,7 @@
         {{ range .Pages }}
         <div class="col-md-4 p-4">
             <div class="border border-secondary p-2 h-100">
-                {{ .Title }}
-        {{ .Content }}
+                {{ .Render "post" }}
             </div>
         </div>
     {{ end }}
